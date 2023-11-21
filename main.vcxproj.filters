@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SDL2-2.28.4\lib\x86\SDL_image.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="GameWindow.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>

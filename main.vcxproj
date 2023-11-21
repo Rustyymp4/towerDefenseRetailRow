@@ -132,9 +132,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ActiveGameData.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="EnemyShooter.cpp" />
+    <ClCompile Include="EnemyWalker.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="GameData.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameWindow.cpp" />
+    <ClCompile Include="GridBox.cpp" />
+    <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PlayerShooter.cpp" />
+    <ClCompile Include="PlayerWorker.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ActiveGameData.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="EnemyShooter.h" />
+    <ClInclude Include="EnemyWalker.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="GameData.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameWindow.h" />
+    <ClInclude Include="GridBox.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="PlayerShooter.h" />
+    <ClInclude Include="PlayerWorker.h" />
     <ClInclude Include="SDL2-2.28.4\lib\x86\SDL_image.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

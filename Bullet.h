@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Bullet:Entity
+class Bullet: public Entity
 {
 public:
 	int positionX;

@@ -1,9 +1,11 @@
 #include "GameData.h"
-#include "GridBox.h"
 
 GameData::GameData(GameWindow* window) {
 
 	this->window = window;
+
+	money = 0;
+	experience = 0;
 
 	prototypeGridBox = new GridBox(0, 0, 0, 0, window);
 
@@ -12,4 +14,8 @@ GameData::GameData(GameWindow* window) {
 			rows[i][j] = new GridBox(*prototypeGridBox, j, i);
 		}
 	}
+
+	prototypesBullet["PeaShooterBullet"] = new Bullet(10, "PeashooterBullet", 10, 5, true, 0, 0, 10, 10, window);
+	prototypesPlayerShooter["PeaShooter"] = new PlayerShooter("PeaShooter", 10, 5, true, 0, 0, 20, 20, window, 10, 7, prototypesBullet["PeaShooterBullet"]);
+
 }

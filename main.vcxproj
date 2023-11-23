@@ -132,9 +132,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ActiveGameData.cpp" />
     <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="EnemyBoss.cpp" />
     <ClCompile Include="EnemyShooter.cpp" />
     <ClCompile Include="EnemyWalker.cpp" />
     <ClCompile Include="Entity.cpp" />
@@ -149,9 +149,9 @@
     <ClCompile Include="Shooter.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ActiveGameData.h" />
     <ClInclude Include="Bullet.h" />
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="EnemyBoss.h" />
     <ClInclude Include="EnemyShooter.h" />
     <ClInclude Include="EnemyWalker.h" />
     <ClInclude Include="Entity.h" />

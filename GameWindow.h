@@ -15,6 +15,7 @@ class GameObject;
 
 class GameWindow
 {
+public:
 	SDL_Window* window;
 	SDL_Renderer* renderer;
 	int sizeX;

@@ -7,7 +7,8 @@
 int main(int argc, char** argv)
 {
 
-	GameWindow oWindow();
+	GameWindow* oWindow = new GameWindow() ;
+	 
 
 
 

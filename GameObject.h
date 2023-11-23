@@ -1,8 +1,7 @@
 #pragma once
 
 #include <vector>
-
-class SDL_Texture;
+#include "GameWindow.h"
 
 using namespace std;
 
@@ -15,11 +14,15 @@ public:
 	int positionY;
 	int sizeX;
 	int sizeY;
-	SDL_Texture* texture;
+	SDL_Surface* surface;
+	GameWindow* window;
+	SDL_Rect r;
 
 
-	GameObject();
+	GameObject(int positionX, int positionY, int sizeX, int sizeY, SDL_Surface* surface, GameWindow* window);
 
-	void Display();
+	void InitDisplay();
+	void EnterCollision(GameObject* other);
+	void LeaveCollision();
+	void SetPosition(int X, int Y);
 };
-

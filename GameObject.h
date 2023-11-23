@@ -14,7 +14,7 @@ public:
 	int positionY;
 	int sizeX;
 	int sizeY;
-	SDL_Surface* surface;
+	//SDL_Surface* surface;
 	GameWindow* window;
 	SDL_Rect r;
 

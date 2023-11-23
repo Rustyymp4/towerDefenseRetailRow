@@ -15,11 +15,11 @@ GameObject::GameObject(int positionX, int positionY, int sizeX, int sizeY, /*SDL
 
 void GameObject::InitDisplay()
 {
-	SDL_Texture* texture = NULL;
+	/*SDL_Texture* texture = NULL;
 	texture = SDL_CreateTextureFromSurface(window->renderer, surface);
 	SDL_FreeSurface(surface);
 	SDL_RenderCopy(window->renderer, texture, NULL, &r);
-	SDL_DestroyTexture(texture);
+	SDL_DestroyTexture(texture);*/
 }
 
 void GameObject::EnterCollision(GameObject* other)

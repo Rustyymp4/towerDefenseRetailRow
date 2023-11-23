@@ -15,8 +15,11 @@ class GameData
 public:
 	int experience;
 	int money;
+	GameWindow* window;
 	vector<vector<GridBox*>> rows;
 	string boardState;
 	map<string, GameObject*> prototypeMap;
-	GameData();
+	GridBox* prototypeGridBox;
+
+	GameData(GameWindow* window);
 };

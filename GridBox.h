@@ -6,8 +6,9 @@
 
 using namespace std;
 
-class GridBox : GameObject
+class GridBox : public GameObject
 {
+public:
 	int coordX;
 	int coordY;
 	bool purchased;

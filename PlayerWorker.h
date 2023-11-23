@@ -5,6 +5,7 @@ using namespace std;
 
 class PlayerWorker : public Entity
 {
+public:
 	string productionType;
 	int productionSpeed;
 

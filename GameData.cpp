@@ -15,7 +15,15 @@ GameData::GameData(GameWindow* window) {
 		}
 	}
 
-	prototypesBullet["PeaShooterBullet"] = new Bullet(10, "PeashooterBullet", 10, 5, true, 0, 0, 10, 10, window);
-	prototypesPlayerShooter["PeaShooter"] = new PlayerShooter("PeaShooter", 10, 5, true, 0, 0, 20, 20, window, 10, 7, prototypesBullet["PeaShooterBullet"]);
+	prototypesBullet["PeashooterBullet"] = new Bullet(10, "PeashooterBullet", 10, 5, true, 0, 0, 10, 10, window);
+	prototypesBullet["FirezombieBullet"] = new Bullet(5, "FirezombieBullet", 10, 6, true, 0, 0, 10, 10, window);
+
+	prototypesPlayerShooter["Peashooter"] = new PlayerShooter("Peashooter", 10, 5, true, 0, 0, 20, 20, window, 10, 7, prototypesBullet["PeashooterBullet"]);
+	prototypesPlayerWorker["Sunflower"] = new PlayerWorker("experience", 10, "Sunflower", 10, 5, true, 0, 0, 20, 20, window);
+	prototypesPlayerWorker["Walnut"] = new PlayerWorker("money", 15, "Walnut", 50, 5, true, 0, 0, 20, 20, window);
+
+	prototypesEnemyBoss["Zomboss"] = new EnemyBoss("Zomboss", 50, 5, true, 0, 0, 20, 20, window, 6);
+	prototypesEnemyWalker["Zombie"] = new EnemyWalker("Zombie", 10, 5, true, 0, 0, 20, 20, window, 6);
+	prototypesEnemyShooter["Firezombie"] = new EnemyShooter("Firezombie", 8, 5, true, 0, 0, 20, 20, window, 8, 5, 4, prototypesBullet["FirezombieBullet"]);
 
 }

@@ -19,7 +19,7 @@ public:
 	SDL_Rect r;
 
 
-	GameObject(int positionX, int positionY, int sizeX, int sizeY, SDL_Surface* surface, GameWindow* window);
+	GameObject(int positionX, int positionY, int sizeX, int sizeY, /*SDL_Surface* surface,*/ GameWindow* window);
 
 	void InitDisplay();
 	void EnterCollision(GameObject* other);

@@ -2,13 +2,13 @@
 #include "GameWindow.h"
 #include <SDL.h>
 
-GameObject::GameObject(int positionX, int positionY, int sizeX, int sizeY, SDL_Surface* surface, GameWindow* window)
+GameObject::GameObject(int positionX, int positionY, int sizeX, int sizeY, /*SDL_Surface* surface,*/ GameWindow* window)
 {
 	this->positionX = positionX;
 	this->positionY = positionY;
 	this->sizeX = sizeX;
 	this->sizeY = sizeY;
-	this->surface = surface;
+	/*this->surface = surface; */
 	this->window = window;
 	this->r = { positionX, positionY, sizeX, sizeY };
 }

@@ -5,7 +5,7 @@
 
 class EnemyWalker : public Entity, Enemy
 {
-	EnemyWalker(string name, int hp, int power, bool belongsToPlayer, int positionX, int positionY, int sizeX, int sizeY, SDL_Surface* surface, GameWindow* window, int speed);
+	EnemyWalker(string name, int hp, int power, bool belongsToPlayer, int positionX, int positionY, int sizeX, int sizeY, /*SDL_Surface* surface,*/ GameWindow* window, int speed);
 
 	EnemyWalker(const EnemyWalker &copying);
 

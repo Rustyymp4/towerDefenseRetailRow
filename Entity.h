@@ -12,7 +12,7 @@ public:
 	bool belongsToPlayer;
 	string state;
 
-	Entity(string name, int hp, int power, bool belongsToPlayer, int positionX, int positionY, int sizeX, int sizeY, SDL_Surface* surface, GameWindow* window);
+	Entity(string name, int hp, int power, bool belongsToPlayer, int positionX, int positionY, int sizeX, int sizeY, /*SDL_Surface* surface,*/ GameWindow* window);
 
 	void TakeDamage(int amount);
 };

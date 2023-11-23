@@ -1,4 +1,4 @@
-#pragma once
+ #pragma once
 
 #include <vector>
 
@@ -12,7 +12,8 @@ class GridBox : GameObject
 	int coordY;
 	bool purchased;
 
-	GridBox(int positionX, int positionY, int sizeX, int sizeY, SDL_Surface* surface, GameWindow* window);
+	GridBox(int positionX, int positionY, int sizeX, int sizeY, /*SDL_Surface* surface,*/ GameWindow* window);
+	GridBox(const GridBox& copying, int coordX, int coordY);
 
 	void Lock();
 	void Unlock();

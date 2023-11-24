@@ -11,5 +11,6 @@ public:
 
 	void Behavior();
 	void PlayerShoot();
+	State DetermineState();
 };
 

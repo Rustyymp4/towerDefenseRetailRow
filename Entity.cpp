@@ -6,8 +6,12 @@ Entity::Entity(string name, int hp, int power, bool belongsToPlayer, int positio
 	this->hp = hp;
 	this->power = power;
 	this->belongsToPlayer = belongsToPlayer;
+	stateClock = 0;
 }
 
 void Entity::TakeDamage(int amount) {
 	hp -= amount;
+	if (hp <= 0) {
+		state = "Die";
+	}
 }

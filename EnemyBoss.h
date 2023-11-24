@@ -9,6 +9,7 @@ public:
 	EnemyBoss(string name, int hp, int power, bool belongsToPlayer, int positionX, int positionY, int sizeX, int sizeY, /*SDL_Surface* surface,*/ GameWindow* window, int speed);
 	EnemyBoss(const EnemyBoss& copying);
 
+	States DetermineState();
 	void Behavior();
 	void ThrowMinion();
 };

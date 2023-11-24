@@ -13,6 +13,7 @@ public:
 
 	EnemyShooter(const EnemyShooter& copying);
 
+	States DetermineState();
 	void Behavior();
 	void EnemyShoot();
 };

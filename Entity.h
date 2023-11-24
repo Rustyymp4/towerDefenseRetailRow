@@ -11,6 +11,7 @@ public:
 	int power;
 	bool belongsToPlayer;
 	string state;
+	int stateClock;
 
 	Entity(string name, int hp, int power, bool belongsToPlayer, int positionX, int positionY, int sizeX, int sizeY, /*SDL_Surface* surface,*/ GameWindow* window);
 

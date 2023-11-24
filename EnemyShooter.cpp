@@ -40,22 +40,22 @@ void EnemyShooter::Behavior()
 	switch (DetermineState())
 	{
 		case Idle: {
-
+			//checks if any plants are in range. if so, change state to attack; else, change state to Move
 			break;
 		}
 
 		case Move: {
-			//The boss moves forward, towards the player's defense
+			//The boss moves forward, towards the player's defense then changes state to idle
 			break;
 		}
 
 		case Attack: {
-			//The boss attacks one of the player's plants
+			//The boss attacks one of the player's plants then changes state to cooldown
 			break;
 		}
 
 		case Cooldown: {
-			//The boss cannot act for a little while
+			//The boss cannot act for a little while, then the state returns to Idle
 			break;
 		}
 
@@ -65,7 +65,7 @@ void EnemyShooter::Behavior()
 		}
 
 		case Disappear: {
-			//The boss disappears for good
+			//The boss is deleted for good
 			break;
 		}
 	}

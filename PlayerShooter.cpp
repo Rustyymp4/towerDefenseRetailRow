@@ -36,7 +36,7 @@ void PlayerShooter::Behavior()
 	switch (DetermineState())
 	{
 		case Idle: {
-
+			//Checks if any enemies are in range. if so, changes the state to "attack"
 			break;
 		}
 
@@ -46,7 +46,7 @@ void PlayerShooter::Behavior()
 		}
 
 		case Cooldown: {
-			//The player's plant waits a while before being able to act again
+			//The player's plant waits a while before being able to act again, then goes into Idle
 			break;
 		}
 

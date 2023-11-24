@@ -40,7 +40,7 @@ void EnemyWalker::Behavior()
 	switch (DetermineState())
 	{
 		case Idle: {
-
+			//checks if any plants are right in front of him, if so change state to attack, or elsechange state to Move
 			break;
 		}
 

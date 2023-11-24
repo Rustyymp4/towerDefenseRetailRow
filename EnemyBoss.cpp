@@ -41,7 +41,7 @@ void EnemyBoss::Behavior()
 	switch (DetermineState())
 		{
 		case Idle: {
-
+			//checks if any plants are in range. if so, change state to attack or a rare chance of throw; else, change state to Move
 			break;
 		}
 
